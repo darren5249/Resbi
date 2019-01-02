@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Resbi | Dashboard</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap/bootstrap4/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/icon/themify-icons/themify-icons.css" rel="stylesheet" />
+	<link href="../assets/css/animate.min.css" rel="stylesheet" />
+	<link href="../assets/css/style.min.css" rel="stylesheet" />
+	<link href="../assets/css/style.css" rel="stylesheet" />
+	<link href="../assets/css/datepicker.css" rel="stylesheet" />
+
+	<!-- ================== END BASE CSS STYLE ================== -->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/loader/pace/pace.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+</head>
+
+<body>
+	<!-- BEGIN #page-container -->
+	<div id="page-container" class="page-header-fixed page-sidebar-fixed">
+		<!-- BEGIN #header -->
+		<div id="header" class="header navbar navbar-default navbar-fixed-top">
+			<!-- BEGIN container-fluid -->
+			<div class="container-fluid">
+				<!-- BEGIN mobile sidebar expand / collapse button -->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<i class="ti-infinite navbar-logo text-gradient bg-gradient-blue-purple"></i>
+						<b>Resbi</b>
+					</a>
+					<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- END mobile sidebar expand / collapse button -->
+				<!-- BEGIN header navigation right -->
+				<div class="navbar-xs-justified subheader-padding">
+					<div class="float-left p-t-2">
+						Today, 1 Nov 2018
+					</div>
+					<div class="float-right">
+						<div class="switcher switcher-success">
+							<input type="checkbox" name="switcher_checkbox_2" id="switcher_checkbox_2" checked="" value="1" />
+							<label for="switcher_checkbox_2"></label>
+						</div>
+					</div>
+					<div class="float-right p-t-2 p-r-10">
+						Check in
+
+					</div>
+				</div>
+				<!-- END header navigation right -->
+			</div>
+			<!-- END container-fluid -->
+			<!-- BEGIN header-search-bar -->
+
+			<!-- END header-search-bar -->
+		</div>
+		<!-- END #header -->
+
+		<!-- BEGIN #sidebar -->
+		<div id="sidebar" class="sidebar sidebar-inverse">
+			<!-- BEGIN scrollbar -->
+			<div data-scrollbar="true" data-height="100%">
+				<!-- BEGIN nav -->
+				<ul class="nav">
+					<li class="nav-profile">
+						<div class="image">
+							<img src="../assets/img/user.jpg" />
+						</div>
+						<div class="info">
+							<h4>Sean Ngu</h4>
+							<p>UXUI Frontend Developer</p>
+						</div>
+					</li>
+					<li class="nav-divider"></li>
+					<li class="nav-header">Navigation</li>
+					<li class="active"><a href="index.html"><i class="ti-home"></i><span>Home</span></a></li>
+					<li><a href="analytics.html"><i class="ti-pie-chart"></i><span>Analytics</span></a></li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<span class="caret caret-right pull-right"></span>
+							<i class="ti-email"></i>
+							<span>Email <span class="notification">20+</span></span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="email_inbox.html">Inbox</a></li>
+							<li><a href="email_compose.html">Compose</a></li>
+							<li><a href="email_detail.html">Detail</a></li>
+						</ul>
+					</li>
+					<li class="nav-divider"></li>
+					<li class="nav-header">Components</li>
+					<li><a href="widgets.html"><i class="ti-shortcode"></i><span>Widgets</span></a></li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret caret-right pull-right"></b>
+							<i class="ti-heart"></i>
+							<span>UI Kits</span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="ui_bootstrap.html">Bootstrap</a></li>
+							<li><a href="ui_buttons.html">Buttons</a></li>
+							<li><a href="ui_typography.html">Typography</a></li>
+							<li><a href="ui_tabs_accordions.html">Tabs & Accordions</a></li>
+							<li><a href="ui_modal_notification.html">Modal & Notification</a></li>
+							<li><a href="ui_panels.html">Panels</a></li>
+							<li><a href="ui_icons.html">Icons</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret caret-right pull-right"></b>
+							<i class="ti-notepad"></i>
+							<span>Forms</span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="form_elements.html">Form Elements</a></li>
+							<li><a href="form_plugins.html">Form Plugins</a></li>
+							<li><a href="form_wizards.html">Wizards</a></li>
+							<li><a href="form_jquery_file_upload.html">File Upload</a></li>
+							<li><a href="form_summernote.html">Summernote</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret caret-right pull-right"></b>
+							<i class="ti-layout-grid2"></i>
+							<span>Tables</span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="table_basic.html">Basic Tables</a></li>
+							<li><a href="table_data.html">DataTables</a></li>
+						</ul>
+					</li>
+					<li><a href="chart.html"><i class="ti-bar-chart"></i><span>Chart</span></a></li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret caret-right pull-right"></b>
+							<i class="ti-map-alt"></i>
+							<span>Map</span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="map_vector.html">Vector Map</a></li>
+							<li><a href="map_google.html">Google Map</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret caret-right pull-right"></b>
+							<i class="ti-layout-sidebar-left"></i>
+							<span>Layout</span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="layout_starter.html">Starter Page</a></li>
+							<li><a href="layout_fixed_footer.html">Fixed Footer</a></li>
+							<li><a href="layout_full_width.html">Full Width</a></li>
+							<li><a href="layout_boxed_layout.html">Boxed Layout</a></li>
+							<li><a href="layout_full_height.html">Full Height</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret caret-right pull-right"></b>
+							<i class="ti-gift"></i>
+							<span>Pages</span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="page_gallery.html">Gallery</a></li>
+							<li><a href="page_coming_soon.html">Coming Soon Page</a></li>
+							<li><a href="page_search_results.html">Search Results</a></li>
+							<li><a href="page_404_error.html">404 Error Page</a></li>
+							<li><a href="page_login.html">Login</a></li>
+							<li><a href="page_register.html">Register</a></li>
+						</ul>
+					</li>
+					<li class="nav-divider"></li>
+					<li class="nav-header">Users</li>
+					<li><a href="profile.html"><i class="ti-user"></i><span>Profile</span></a></li>
+					<li><a href="calendar.html"><i class="ti-calendar"></i> <span>Calendar</span></a></li>
+					<li><a href="settings.html"><i class="ti-settings"></i><span>Settings</span></a></li>
+					<li><a href="helper.html"><i class="ti-help-alt"></i><span>Helper</span></a></li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret caret-right pull-right"></b>
+							<i class="ti-align-left"></i>
+							<span>Menu Level</span>
+						</a>
+						<ul class="sub-menu">
+							<li class="has-sub">
+								<a href="javascript:;">
+									<b class="caret caret-right pull-right"></b>
+									Menu 1.1
+								</a>
+								<ul class="sub-menu">
+									<li class="has-sub">
+										<a href="javascript:;">
+											<b class="caret caret-right pull-right"></b>
+											Menu 2.1
+										</a>
+										<ul class="sub-menu">
+											<li><a href="javascript:;">Menu 3.1</a></li>
+											<li><a href="javascript:;">Menu 3.2</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:;">Menu 2.2</a></li>
+									<li><a href="javascript:;">Menu 2.3</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:;">Menu 1.2</a></li>
+							<li><a href="javascript:;">Menu 1.3</a></li>
+						</ul>
+					</li>
+					<li class="nav-divider"></li>
+					<li class="nav-header">Projects</li>
+					<li class="nav-project">
+						<a href="#">
+							<div class="project-icon">
+								<i class="ti-mobile"></i>
+							</div>
+							<div class="project-info">
+								<span class="pull-right project-percentage">70%</span>
+								<h4 class="project-title">Mobile App Dev</h4>
+								<div class="progress progress-xs">
+									<div class="progress-bar bg-gradient-blue-purple" style="width: 70%;" role="progressbar"></div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="nav-project">
+						<a href="#">
+							<div class="project-icon">
+								<i class="ti-headphone"></i>
+							</div>
+							<div class="project-info">
+								<span class="pull-right project-percentage">40%</span>
+								<h4 class="project-title">New Audio Project</h4>
+								<div class="progress progress-xs">
+									<div class="progress-bar  bg-gradient-blue-purple" style="width: 40%;" role="progressbar"></div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="nav-project">
+						<a href="#">
+							<div class="project-icon">
+								<i class="ti-github"></i>
+							</div>
+							<div class="project-info">
+								<span class="pull-right project-percentage">50%</span>
+								<h4 class="project-title">Repository Settings</h4>
+								<div class="progress progress-xs">
+									<div class="progress-bar bg-gradient-blue-purple" style="width: 50%;" role="progressbar"></div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="nav-divider"></li>
+					<li class="nav-copyright">&copy; 2017 seanTheme All Right Reserved</li>
+				</ul>
+				<!-- END nav -->
+			</div>
+			<!-- END scrollbar -->
+		</div>
+		<!-- END #sidebar -->
+
+		<!-- BEGIN #content -->
+		<div>
+
+
+		
+			<div id='calendar' class="calendar-bg"></div>
+			<div class="activity-padding desktop">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						Activity
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-sm-12">
+
+
+						<div class="widget-list-container task-card">
+							<div class="widget-list-media icon">
+								<i class="ti-book bg-gradient-orange"></i>
+							</div>
+							<div class="widget-list-content">
+								<h4 class="widget-title">iBooks App</h4>
+								<div class="widget-desc">32 new download</div>
+							</div>
+							<div class="widget-list-action">
+								<div class="dropdown dropdown-icon">
+									<a href="#" data-toggle="dropdown"><i class="ti-more-alt"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">View</a></li>
+										<li><a href="#">Analytics</a></li>
+										<li><a href="#">Report</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-sm-12">
+
+						<div class="widget-list-container task-card">
+							<div class="widget-list-media icon">
+								<i class="ti-book bg-gradient-orange"></i>
+							</div>
+							<div class="widget-list-content">
+								<h4 class="widget-title">iBooks App</h4>
+								<div class="widget-desc">32 new download</div>
+							</div>
+							<div class="widget-list-action">
+								<div class="dropdown dropdown-icon">
+									<a href="#" data-toggle="dropdown"><i class="ti-more-alt"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">View</a></li>
+										<li><a href="#">Analytics</a></li>
+										<li><a href="#">Report</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						Activity
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-sm-12">
+
+
+						<div class="widget-list-container task-card">
+							<div class="widget-list-media icon">
+								<i class="ti-book bg-gradient-orange"></i>
+							</div>
+							<div class="widget-list-content">
+								<h4 class="widget-title">iBooks App</h4>
+								<div class="widget-desc">32 new download</div>
+							</div>
+							<div class="widget-list-action">
+								<div class="dropdown dropdown-icon">
+									<a href="#" data-toggle="dropdown"><i class="ti-more-alt"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">View</a></li>
+										<li><a href="#">Analytics</a></li>
+										<li><a href="#">Report</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-sm-12">
+
+						<div class="widget-list-container task-card">
+							<div class="widget-list-media icon">
+								<i class="ti-book bg-gradient-orange"></i>
+							</div>
+							<div class="widget-list-content">
+								<h4 class="widget-title">iBooks App</h4>
+								<div class="widget-desc">32 new download</div>
+							</div>
+							<div class="widget-list-action">
+								<div class="dropdown dropdown-icon">
+									<a href="#" data-toggle="dropdown"><i class="ti-more-alt"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">View</a></li>
+										<li><a href="#">Analytics</a></li>
+										<li><a href="#">Report</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+		</div>
+		<!-- END #content -->
+
+	</div>
+	<!-- END #page-container -->
+
+	<div class="footer-menu">
+		<div class="row">
+			<div class="menu-item selected">
+				<div>
+					HOME
+				</div>
+			</div>
+			<div class="menu-item " onclick="window.location='approval.html'" >
+				<div>
+					APPROVAL
+				</div>
+			</div>
+			<div class="menu-item ">
+				<div data-toggle="modal" data-target="#myModal">
+					+
+				</div>
+			</div>
+			<div class="menu-item " onclick="window.location='news.html'">
+				<div>
+					NEWS
+				</div>
+			</div>
+			<div class="menu-item ">
+				<div>
+					MORE
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+
+					<h4 class="modal-title">CREATE</h4>
+				</div>
+				<div class="modal-body">
+					<div class="bottomsheet-list">
+						Claim
+					</div>
+					<div class="bottomsheet-list" onclick="window.location='create-leave.html'" >
+						Leave
+					</div>
+					<div class="bottomsheet-list">
+						Reminder
+					</div>
+					<div class="bottomsheet-list">
+						Activities
+					</div>
+					<div class="bottomsheet-list" onclick="window.location='create-task.html'">
+						Assign Task
+					</div>
+					<div class="bottomsheet-list">
+						News
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../assets/plugins/cookie/js/js.cookie.js"></script>
+	<script src="../assets/plugins/tooltip/popper/popper.min.js"></script>
+	<script src="../assets/plugins/bootstrap/bootstrap4/js/bootstrap.min.js"></script>
+	<script src="../assets/plugins/scrollbar/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="../assets/plugins/chart/chart-js/Chart.min.js"></script>
+	<script src="../assets/js/page/dashboard.demo.min.js"></script>
+	<script src="../assets/js/apps.min.js"></script>
+	<script src="../assets/js/page/bootstrap-datepicker.js"></script>
+	<!-- ================== END PAGE LEVEL JS ================== -->
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+
+	<script>
+		$(document).ready(function () {
+			App.init();
+			Dashboard.init();
+		});
+
+		$('#calendar').datepicker({
+			inline: true,
+			sideBySide: true,
+			locale: 'de',
+			format: 'DD.MM.YYYY',
+			todayHighlight: true
+		});
+
+
+
+
+	</script>
+</body>
+
+</html>
